@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/nouislider.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <title>Каталог</title>
+</head>
+
+<body>
+    <header class="header hc">
+        <div class="container header__container">
+            <a href="index.html" class="logo">
+                <img src="assets/img/logo.svg" alt="logo">
+            </a>
+            <nav class="menu">
+                <ul class="menu__list">
+                    <li class="menu__item">
+                        <a class="menu__link" href="index.html#sales">Скидки</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="catalog.html">Каталог</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="index.html#about">О нас</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="index.html#partners">Наши партнеры</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="index.html#info">Информация</a>
+                    </li>
+                    <button class="btn-white">
+                        Войти
+                        <svg width="18" height="25" viewBox="0 0 18 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M0 21.375C0 16.4044 4.02944 12.375 9 12.375C13.9706 12.375 18 16.4044 18 21.375V22.6875C18 23.8266 17.0766 24.75 15.9375 24.75H2.0625C0.923412 24.75 0 23.8266 0 22.6875V21.375Z"
+                                fill="black" />
+                            <path
+                                d="M14.625 5.625C14.625 8.7316 12.1066 11.25 9 11.25C5.8934 11.25 3.375 8.7316 3.375 5.625C3.375 2.5184 5.8934 0 9 0C12.1066 0 14.625 2.5184 14.625 5.625Z"
+                                fill="black" />
+                        </svg>
+                    </button>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="main">
+        <div class="container">
+            <h2 class="title">
+                Каталог
+            </h2>
+            <section class="grid catalog-page ">
+                <div class="filter">
+                    <div class="filter__title">
+                        Фильтр
+                    </div>
+                    <div class="filter__item">
+            
+                        <div class="filter__subtitle">
+                            Цена
+                        </div>
+            
+                        <div class="filter-price__slider" id="range-slider"></div>
+                        
+                        <div class="filter-price__inputs">
+                            <label for="" class="filters-price__label">
+                                <span class="filters-price__text">от</span>
+                                <input placeholder="500" min="500" max="99999" type="number" name="" class="filters-price__input" id="input-0">
+                                <span class="filters-price__text">₽</span>
+                            </label>
+                            <label for="" class="filters-price__label">
+                                <span class="filters-price__text">до</span>
+                                <input placeholder="99999" min="500" max="99999" type="number" name="" class="filters-price__input"
+                                    id="input-1">
+                                <span class="filters-price__text">₽</span>
+                            </label>
+            
+                    </div>
+            </div>
+                    <div class="filter__item">
+            
+                        <div class="filter__subtitle">
+                            Количество людей
+                        </div>
+            
+                        <div class="filter-price__slider" id="range-slider2"></div>
+                        
+                        <div class="filter-price__inputs">
+                            <label for="" class="filters-price__label">
+                                <span class="filters-price__text">от</span>
+                                <input placeholder="500" min="500" max="99999" type="number" name="" class="filters-price__input" id="input-3">
+                    
+                            </label>
+                            <label for="" class="filters-price__label">
+                                <span class="filters-price__text">до</span>
+                                <input placeholder="99999" min="500" max="99999" type="number" name="" class="filters-price__input"
+                                    id="input-4">
+                   
+                            </label>
+            
+                    </div>
+            </div>
+                    <div class="filter__item">
+            
+                        <div class="filter__subtitle">
+                            Возраст
+                        </div>
+                        <div class="radiobuttons">
+                            <div class="radiobuttons__item">
+                                Для детей
+                                <input value="1" type="radio" name="nameradio" id="">
+                            </div>
+                            <div class="radiobuttons__item">
+                                Для подростков
+                                <input value="2" type="radio" name="nameradio" id="">
+                            </div>
+                            <div class="radiobuttons__item">
+                                Для взрослых
+                                <input value="3" type="radio" name="nameradio" id="">
+                            </div>
+            
+                        </div>
+            
+                    </div>
+                    <div class="filter__item">
+            
+                        <div class="filter__subtitle">
+                            Вид
+                        </div>
+                        
+                        <div class="filter__list">
+                            <div class="filter__category active">
+                                Классические
+                            </div>
+                            <div class="filter__category">
+                                Сюжетные
+                            </div>
+                            <div class="filter__category">
+                                Командные
+                            </div>
+                            <div class="filter__category">
+                                Головоломки
+                            </div>
+                            <div class="filter__category">
+                                Сольные
+                            </div>
+                        </div>
+                    </div>
+                
+            
+                </div>
+                <ul class="catalog-page__catalog">
+                    <li class="products__item">
+                        <article class="product">
+                            <div class="product__img">
+                                <img src="assets/img/products/p1.jpg" alt="">
+                                <div class="people-count">1-2
+                                    <svg width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M7.7998 16.4081C7.7998 12.763 10.7547 9.80811 14.3998 9.80811C18.0449 9.80811 20.9998 12.763 20.9998 16.4081V17.3706C20.9998 18.2059 20.3226 18.8831 19.4873 18.8831H9.3123C8.47697 18.8831 7.7998 18.2059 7.7998 17.3706V16.4081Z"
+                                            fill="#DD4D00" />
+                                        <path
+                                            d="M0.466797 16.4081C0.466797 12.763 3.42172 9.80811 7.0668 9.80811C10.7119 9.80811 13.6668 12.763 13.6668 16.4081V17.3706C13.6668 18.2059 12.9896 18.8831 12.1543 18.8831H1.97929C1.14396 18.8831 0.466797 18.2059 0.466797 17.3706V16.4081Z"
+                                            fill="#DD4D00" fill-opacity="0.59" />
+                                        <circle cx="14.3994" cy="4.85791" r="4.125" fill="#DD4D00" />
+                                        <circle cx="7.06641" cy="4.85791" r="4.125" fill="#DD4D00" fill-opacity="0.59" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <a href="product.html#tab_1" class="product__title">
+                                Ужас Аркхэма. Карточная игра
+                            </a>
+                            <div class="product__price">
+                                1290₽
+                    
+                            </div>
+                            <button class="product__btn">
+                                В корзину
+                                <svg width="22" height="23" viewBox="0 0 22 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M18.1943 9.51312L17.478 6.88606C17.2018 5.87309 17.0637 5.3666 16.7804 4.98516C16.4983 4.60529 16.1149 4.31248 15.6743 4.14023C15.2317 3.96729 14.7068 3.96729 13.6568 3.96729M3.06934 9.51312L3.78566 6.88606C4.06186 5.87309 4.19996 5.3666 4.48323 4.98516C4.76534 4.60529 5.14868 4.31248 5.58938 4.14023C6.0319 3.96729 6.55688 3.96729 7.60684 3.96729"
+                                        stroke="white" stroke-width="1.5125" />
+                                    <path
+                                        d="M7.60742 3.96732C7.60742 3.41044 8.05887 2.95898 8.61576 2.95898H12.6491C13.206 2.95898 13.6574 3.41044 13.6574 3.96732C13.6574 4.5242 13.206 4.97565 12.6491 4.97565H8.61576C8.05887 4.97565 7.60742 4.5242 7.60742 3.96732Z"
+                                        stroke="white" stroke-width="1.5125" />
+                                    <path d="M6.59863 13.042V17.0753" stroke="white" stroke-width="1.5125" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M14.666 13.042V17.0753" stroke="white" stroke-width="1.5125" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M10.6318 13.042V17.0753" stroke="white" stroke-width="1.5125" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path
+                                        d="M2.42827 16.5261C2.97849 18.727 3.2536 19.8274 4.07417 20.4681C4.89474 21.1088 6.02903 21.1088 8.29764 21.1088H12.9669C15.2355 21.1088 16.3698 21.1088 17.1904 20.4681C18.011 19.8274 18.286 18.727 18.8363 16.5261C19.7013 13.0657 20.1339 11.3355 19.2256 10.1722C18.3173 9.00879 16.5338 9.00879 12.9669 9.00879H8.29764C4.73075 9.00879 2.94731 9.00879 2.03897 10.1722C1.50577 10.855 1.43461 11.7333 1.64175 13.0421"
+                                        stroke="white" stroke-width="1.5125" stroke-linecap="round" />
+                                </svg>
+                            </button>
+                        </article>
+                    </li>
+                    <li class="products__item">
+                        <article class="product">
+                            <div class="product__img">
+                                <img src="assets/img/products/p1.jpg" alt="">
+                                <div class="people-count">1-2
+                                    <svg width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M7.7998 16.4081C7.7998 12.763 10.7547 9.80811 14.3998 9.80811C18.0449 9.80811 20.9998 12.763 20.9998 16.4081V17.3706C20.9998 18.2059 20.3226 18.8831 19.4873 18.8831H9.3123C8.47697 18.8831 7.7998 18.2059 7.7998 17.3706V16.4081Z"
+                                            fill="#DD4D00" />
+                                        <path
+                                            d="M0.466797 16.4081C0.466797 12.763 3.42172 9.80811 7.0668 9.80811C10.7119 9.80811 13.6668 12.763 13.6668 16.4081V17.3706C13.6668 18.2059 12.9896 18.8831 12.1543 18.8831H1.97929C1.14396 18.8831 0.466797 18.2059 0.466797 17.3706V16.4081Z"
+                                            fill="#DD4D00" fill-opacity="0.59" />
+                                        <circle cx="14.3994" cy="4.85791" r="4.125" fill="#DD4D00" />
+                                        <circle cx="7.06641" cy="4.85791" r="4.125" fill="#DD4D00" fill-opacity="0.59" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <a href="product.html#tab_1" class="product__title">
+                                Ужас Аркхэма. Карточная игра
+                            </a>
+                            <div class="product__price">
+                                1290₽
+                    
+                            </div>
+                            <button class="product__btn">
+                                В корзину
+                                <svg width="22" height="23" viewBox="0 0 22 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M18.1943 9.51312L17.478 6.88606C17.2018 5.87309 17.0637 5.3666 16.7804 4.98516C16.4983 4.60529 16.1149 4.31248 15.6743 4.14023C15.2317 3.96729 14.7068 3.96729 13.6568 3.96729M3.06934 9.51312L3.78566 6.88606C4.06186 5.87309 4.19996 5.3666 4.48323 4.98516C4.76534 4.60529 5.14868 4.31248 5.58938 4.14023C6.0319 3.96729 6.55688 3.96729 7.60684 3.96729"
+                                        stroke="white" stroke-width="1.5125" />
+                                    <path
+                                        d="M7.60742 3.96732C7.60742 3.41044 8.05887 2.95898 8.61576 2.95898H12.6491C13.206 2.95898 13.6574 3.41044 13.6574 3.96732C13.6574 4.5242 13.206 4.97565 12.6491 4.97565H8.61576C8.05887 4.97565 7.60742 4.5242 7.60742 3.96732Z"
+                                        stroke="white" stroke-width="1.5125" />
+                                    <path d="M6.59863 13.042V17.0753" stroke="white" stroke-width="1.5125" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M14.666 13.042V17.0753" stroke="white" stroke-width="1.5125" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M10.6318 13.042V17.0753" stroke="white" stroke-width="1.5125" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path
+                                        d="M2.42827 16.5261C2.97849 18.727 3.2536 19.8274 4.07417 20.4681C4.89474 21.1088 6.02903 21.1088 8.29764 21.1088H12.9669C15.2355 21.1088 16.3698 21.1088 17.1904 20.4681C18.011 19.8274 18.286 18.727 18.8363 16.5261C19.7013 13.0657 20.1339 11.3355 19.2256 10.1722C18.3173 9.00879 16.5338 9.00879 12.9669 9.00879H8.29764C4.73075 9.00879 2.94731 9.00879 2.03897 10.1722C1.50577 10.855 1.43461 11.7333 1.64175 13.0421"
+                                        stroke="white" stroke-width="1.5125" stroke-linecap="round" />
+                                </svg>
+                            </button>
+                        </article>
+                    </li>
+                    <li class="products__item">
+                        <article class="product">
+                            <div class="product__img">
+                                <img src="assets/img/products/p1.jpg" alt="">
+                                <div class="people-count">1-2
+                                    <svg width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M7.7998 16.4081C7.7998 12.763 10.7547 9.80811 14.3998 9.80811C18.0449 9.80811 20.9998 12.763 20.9998 16.4081V17.3706C20.9998 18.2059 20.3226 18.8831 19.4873 18.8831H9.3123C8.47697 18.8831 7.7998 18.2059 7.7998 17.3706V16.4081Z"
+                                            fill="#DD4D00" />
+                                        <path
+                                            d="M0.466797 16.4081C0.466797 12.763 3.42172 9.80811 7.0668 9.80811C10.7119 9.80811 13.6668 12.763 13.6668 16.4081V17.3706C13.6668 18.2059 12.9896 18.8831 12.1543 18.8831H1.97929C1.14396 18.8831 0.466797 18.2059 0.466797 17.3706V16.4081Z"
+                                            fill="#DD4D00" fill-opacity="0.59" />
+                                        <circle cx="14.3994" cy="4.85791" r="4.125" fill="#DD4D00" />
+                                        <circle cx="7.06641" cy="4.85791" r="4.125" fill="#DD4D00" fill-opacity="0.59" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <a href="product.html#tab_1" class="product__title">
+                                Ужас Аркхэма. Карточная игра
+                            </a>
+                            <div class="product__price">
+                                1290₽
+                    
+                            </div>
+                            <button class="product__btn">
+                                В корзину
+                                <svg width="22" height="23" viewBox="0 0 22 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M18.1943 9.51312L17.478 6.88606C17.2018 5.87309 17.0637 5.3666 16.7804 4.98516C16.4983 4.60529 16.1149 4.31248 15.6743 4.14023C15.2317 3.96729 14.7068 3.96729 13.6568 3.96729M3.06934 9.51312L3.78566 6.88606C4.06186 5.87309 4.19996 5.3666 4.48323 4.98516C4.76534 4.60529 5.14868 4.31248 5.58938 4.14023C6.0319 3.96729 6.55688 3.96729 7.60684 3.96729"
+                                        stroke="white" stroke-width="1.5125" />
+                                    <path
+                                        d="M7.60742 3.96732C7.60742 3.41044 8.05887 2.95898 8.61576 2.95898H12.6491C13.206 2.95898 13.6574 3.41044 13.6574 3.96732C13.6574 4.5242 13.206 4.97565 12.6491 4.97565H8.61576C8.05887 4.97565 7.60742 4.5242 7.60742 3.96732Z"
+                                        stroke="white" stroke-width="1.5125" />
+                                    <path d="M6.59863 13.042V17.0753" stroke="white" stroke-width="1.5125" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M14.666 13.042V17.0753" stroke="white" stroke-width="1.5125" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M10.6318 13.042V17.0753" stroke="white" stroke-width="1.5125" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path
+                                        d="M2.42827 16.5261C2.97849 18.727 3.2536 19.8274 4.07417 20.4681C4.89474 21.1088 6.02903 21.1088 8.29764 21.1088H12.9669C15.2355 21.1088 16.3698 21.1088 17.1904 20.4681C18.011 19.8274 18.286 18.727 18.8363 16.5261C19.7013 13.0657 20.1339 11.3355 19.2256 10.1722C18.3173 9.00879 16.5338 9.00879 12.9669 9.00879H8.29764C4.73075 9.00879 2.94731 9.00879 2.03897 10.1722C1.50577 10.855 1.43461 11.7333 1.64175 13.0421"
+                                        stroke="white" stroke-width="1.5125" stroke-linecap="round" />
+                                </svg>
+                            </button>
+                        </article>
+                    </li>
+                    <li class="products__item">
+                        <article class="product">
+                            <div class="product__img">
+                                <img src="assets/img/products/p1.jpg" alt="">
+                                <div class="people-count">1-2
+                                    <svg width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M7.7998 16.4081C7.7998 12.763 10.7547 9.80811 14.3998 9.80811C18.0449 9.80811 20.9998 12.763 20.9998 16.4081V17.3706C20.9998 18.2059 20.3226 18.8831 19.4873 18.8831H9.3123C8.47697 18.8831 7.7998 18.2059 7.7998 17.3706V16.4081Z"
+                                            fill="#DD4D00" />
+                                        <path
+                                            d="M0.466797 16.4081C0.466797 12.763 3.42172 9.80811 7.0668 9.80811C10.7119 9.80811 13.6668 12.763 13.6668 16.4081V17.3706C13.6668 18.2059 12.9896 18.8831 12.1543 18.8831H1.97929C1.14396 18.8831 0.466797 18.2059 0.466797 17.3706V16.4081Z"
+                                            fill="#DD4D00" fill-opacity="0.59" />
+                                        <circle cx="14.3994" cy="4.85791" r="4.125" fill="#DD4D00" />
+                                        <circle cx="7.06641" cy="4.85791" r="4.125" fill="#DD4D00" fill-opacity="0.59" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <a href="product.html#tab_1" class="product__title">
+                                Ужас Аркхэма. Карточная игра
+                            </a>
+                            <div class="product__price">
+                                1290₽
+                    
+                            </div>
+                            <button class="product__btn">
+                                В корзину
+                                <svg width="22" height="23" viewBox="0 0 22 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M18.1943 9.51312L17.478 6.88606C17.2018 5.87309 17.0637 5.3666 16.7804 4.98516C16.4983 4.60529 16.1149 4.31248 15.6743 4.14023C15.2317 3.96729 14.7068 3.96729 13.6568 3.96729M3.06934 9.51312L3.78566 6.88606C4.06186 5.87309 4.19996 5.3666 4.48323 4.98516C4.76534 4.60529 5.14868 4.31248 5.58938 4.14023C6.0319 3.96729 6.55688 3.96729 7.60684 3.96729"
+                                        stroke="white" stroke-width="1.5125" />
+                                    <path
+                                        d="M7.60742 3.96732C7.60742 3.41044 8.05887 2.95898 8.61576 2.95898H12.6491C13.206 2.95898 13.6574 3.41044 13.6574 3.96732C13.6574 4.5242 13.206 4.97565 12.6491 4.97565H8.61576C8.05887 4.97565 7.60742 4.5242 7.60742 3.96732Z"
+                                        stroke="white" stroke-width="1.5125" />
+                                    <path d="M6.59863 13.042V17.0753" stroke="white" stroke-width="1.5125" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M14.666 13.042V17.0753" stroke="white" stroke-width="1.5125" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M10.6318 13.042V17.0753" stroke="white" stroke-width="1.5125" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path
+                                        d="M2.42827 16.5261C2.97849 18.727 3.2536 19.8274 4.07417 20.4681C4.89474 21.1088 6.02903 21.1088 8.29764 21.1088H12.9669C15.2355 21.1088 16.3698 21.1088 17.1904 20.4681C18.011 19.8274 18.286 18.727 18.8363 16.5261C19.7013 13.0657 20.1339 11.3355 19.2256 10.1722C18.3173 9.00879 16.5338 9.00879 12.9669 9.00879H8.29764C4.73075 9.00879 2.94731 9.00879 2.03897 10.1722C1.50577 10.855 1.43461 11.7333 1.64175 13.0421"
+                                        stroke="white" stroke-width="1.5125" stroke-linecap="round" />
+                                </svg>
+                            </button>
+                        </article>
+                    </li>
+                    <li class="products__item">
+                        <article class="product">
+                            <div class="product__img">
+                                <img src="assets/img/products/p1.jpg" alt="">
+                                <div class="people-count">1-2
+                                    <svg width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M7.7998 16.4081C7.7998 12.763 10.7547 9.80811 14.3998 9.80811C18.0449 9.80811 20.9998 12.763 20.9998 16.4081V17.3706C20.9998 18.2059 20.3226 18.8831 19.4873 18.8831H9.3123C8.47697 18.8831 7.7998 18.2059 7.7998 17.3706V16.4081Z"
+                                            fill="#DD4D00" />
+                                        <path
+                                            d="M0.466797 16.4081C0.466797 12.763 3.42172 9.80811 7.0668 9.80811C10.7119 9.80811 13.6668 12.763 13.6668 16.4081V17.3706C13.6668 18.2059 12.9896 18.8831 12.1543 18.8831H1.97929C1.14396 18.8831 0.466797 18.2059 0.466797 17.3706V16.4081Z"
+                                            fill="#DD4D00" fill-opacity="0.59" />
+                                        <circle cx="14.3994" cy="4.85791" r="4.125" fill="#DD4D00" />
+                                        <circle cx="7.06641" cy="4.85791" r="4.125" fill="#DD4D00" fill-opacity="0.59" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <a href="product.html#tab_1" class="product__title">
+                                Ужас Аркхэма. Карточная игра
+                            </a>
+                            <div class="product__price">
+                                1290₽
+                    
+                            </div>
+                            <button class="product__btn">
+                                В корзину
+                                <svg width="22" height="23" viewBox="0 0 22 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M18.1943 9.51312L17.478 6.88606C17.2018 5.87309 17.0637 5.3666 16.7804 4.98516C16.4983 4.60529 16.1149 4.31248 15.6743 4.14023C15.2317 3.96729 14.7068 3.96729 13.6568 3.96729M3.06934 9.51312L3.78566 6.88606C4.06186 5.87309 4.19996 5.3666 4.48323 4.98516C4.76534 4.60529 5.14868 4.31248 5.58938 4.14023C6.0319 3.96729 6.55688 3.96729 7.60684 3.96729"
+                                        stroke="white" stroke-width="1.5125" />
+                                    <path
+                                        d="M7.60742 3.96732C7.60742 3.41044 8.05887 2.95898 8.61576 2.95898H12.6491C13.206 2.95898 13.6574 3.41044 13.6574 3.96732C13.6574 4.5242 13.206 4.97565 12.6491 4.97565H8.61576C8.05887 4.97565 7.60742 4.5242 7.60742 3.96732Z"
+                                        stroke="white" stroke-width="1.5125" />
+                                    <path d="M6.59863 13.042V17.0753" stroke="white" stroke-width="1.5125" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M14.666 13.042V17.0753" stroke="white" stroke-width="1.5125" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M10.6318 13.042V17.0753" stroke="white" stroke-width="1.5125" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path
+                                        d="M2.42827 16.5261C2.97849 18.727 3.2536 19.8274 4.07417 20.4681C4.89474 21.1088 6.02903 21.1088 8.29764 21.1088H12.9669C15.2355 21.1088 16.3698 21.1088 17.1904 20.4681C18.011 19.8274 18.286 18.727 18.8363 16.5261C19.7013 13.0657 20.1339 11.3355 19.2256 10.1722C18.3173 9.00879 16.5338 9.00879 12.9669 9.00879H8.29764C4.73075 9.00879 2.94731 9.00879 2.03897 10.1722C1.50577 10.855 1.43461 11.7333 1.64175 13.0421"
+                                        stroke="white" stroke-width="1.5125" stroke-linecap="round" />
+                                </svg>
+                            </button>
+                        </article>
+                    </li>
+                    <li class="products__item">
+                        <article class="product">
+                            <div class="product__img">
+                                <img src="assets/img/products/p1.jpg" alt="">
+                                <div class="people-count">1-2
+                                    <svg width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M7.7998 16.4081C7.7998 12.763 10.7547 9.80811 14.3998 9.80811C18.0449 9.80811 20.9998 12.763 20.9998 16.4081V17.3706C20.9998 18.2059 20.3226 18.8831 19.4873 18.8831H9.3123C8.47697 18.8831 7.7998 18.2059 7.7998 17.3706V16.4081Z"
+                                            fill="#DD4D00" />
+                                        <path
+                                            d="M0.466797 16.4081C0.466797 12.763 3.42172 9.80811 7.0668 9.80811C10.7119 9.80811 13.6668 12.763 13.6668 16.4081V17.3706C13.6668 18.2059 12.9896 18.8831 12.1543 18.8831H1.97929C1.14396 18.8831 0.466797 18.2059 0.466797 17.3706V16.4081Z"
+                                            fill="#DD4D00" fill-opacity="0.59" />
+                                        <circle cx="14.3994" cy="4.85791" r="4.125" fill="#DD4D00" />
+                                        <circle cx="7.06641" cy="4.85791" r="4.125" fill="#DD4D00" fill-opacity="0.59" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <a href="product.html#tab_1" class="product__title">
+                                Ужас Аркхэма. Карточная игра
+                            </a>
+                            <div class="product__price">
+                                1290₽
+                    
+                            </div>
+                            <button class="product__btn">
+                                В корзину
+                                <svg width="22" height="23" viewBox="0 0 22 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M18.1943 9.51312L17.478 6.88606C17.2018 5.87309 17.0637 5.3666 16.7804 4.98516C16.4983 4.60529 16.1149 4.31248 15.6743 4.14023C15.2317 3.96729 14.7068 3.96729 13.6568 3.96729M3.06934 9.51312L3.78566 6.88606C4.06186 5.87309 4.19996 5.3666 4.48323 4.98516C4.76534 4.60529 5.14868 4.31248 5.58938 4.14023C6.0319 3.96729 6.55688 3.96729 7.60684 3.96729"
+                                        stroke="white" stroke-width="1.5125" />
+                                    <path
+                                        d="M7.60742 3.96732C7.60742 3.41044 8.05887 2.95898 8.61576 2.95898H12.6491C13.206 2.95898 13.6574 3.41044 13.6574 3.96732C13.6574 4.5242 13.206 4.97565 12.6491 4.97565H8.61576C8.05887 4.97565 7.60742 4.5242 7.60742 3.96732Z"
+                                        stroke="white" stroke-width="1.5125" />
+                                    <path d="M6.59863 13.042V17.0753" stroke="white" stroke-width="1.5125" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M14.666 13.042V17.0753" stroke="white" stroke-width="1.5125" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M10.6318 13.042V17.0753" stroke="white" stroke-width="1.5125" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path
+                                        d="M2.42827 16.5261C2.97849 18.727 3.2536 19.8274 4.07417 20.4681C4.89474 21.1088 6.02903 21.1088 8.29764 21.1088H12.9669C15.2355 21.1088 16.3698 21.1088 17.1904 20.4681C18.011 19.8274 18.286 18.727 18.8363 16.5261C19.7013 13.0657 20.1339 11.3355 19.2256 10.1722C18.3173 9.00879 16.5338 9.00879 12.9669 9.00879H8.29764C4.73075 9.00879 2.94731 9.00879 2.03897 10.1722C1.50577 10.855 1.43461 11.7333 1.64175 13.0421"
+                                        stroke="white" stroke-width="1.5125" stroke-linecap="round" />
+                                </svg>
+                            </button>
+                        </article>
+                    </li>
+                    <li class="products__item">
+                        <article class="product">
+                            <div class="product__img">
+                                <img src="assets/img/products/p1.jpg" alt="">
+                                <div class="people-count">1-2
+                                    <svg width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M7.7998 16.4081C7.7998 12.763 10.7547 9.80811 14.3998 9.80811C18.0449 9.80811 20.9998 12.763 20.9998 16.4081V17.3706C20.9998 18.2059 20.3226 18.8831 19.4873 18.8831H9.3123C8.47697 18.8831 7.7998 18.2059 7.7998 17.3706V16.4081Z"
+                                            fill="#DD4D00" />
+                                        <path
+                                            d="M0.466797 16.4081C0.466797 12.763 3.42172 9.80811 7.0668 9.80811C10.7119 9.80811 13.6668 12.763 13.6668 16.4081V17.3706C13.6668 18.2059 12.9896 18.8831 12.1543 18.8831H1.97929C1.14396 18.8831 0.466797 18.2059 0.466797 17.3706V16.4081Z"
+                                            fill="#DD4D00" fill-opacity="0.59" />
+                                        <circle cx="14.3994" cy="4.85791" r="4.125" fill="#DD4D00" />
+                                        <circle cx="7.06641" cy="4.85791" r="4.125" fill="#DD4D00" fill-opacity="0.59" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <a href="product.html#tab_1" class="product__title">
+                                Ужас Аркхэма. Карточная игра
+                            </a>
+                            <div class="product__price">
+                                1290₽
+                    
+                            </div>
+                            <button class="product__btn">
+                                В корзину
+                                <svg width="22" height="23" viewBox="0 0 22 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M18.1943 9.51312L17.478 6.88606C17.2018 5.87309 17.0637 5.3666 16.7804 4.98516C16.4983 4.60529 16.1149 4.31248 15.6743 4.14023C15.2317 3.96729 14.7068 3.96729 13.6568 3.96729M3.06934 9.51312L3.78566 6.88606C4.06186 5.87309 4.19996 5.3666 4.48323 4.98516C4.76534 4.60529 5.14868 4.31248 5.58938 4.14023C6.0319 3.96729 6.55688 3.96729 7.60684 3.96729"
+                                        stroke="white" stroke-width="1.5125" />
+                                    <path
+                                        d="M7.60742 3.96732C7.60742 3.41044 8.05887 2.95898 8.61576 2.95898H12.6491C13.206 2.95898 13.6574 3.41044 13.6574 3.96732C13.6574 4.5242 13.206 4.97565 12.6491 4.97565H8.61576C8.05887 4.97565 7.60742 4.5242 7.60742 3.96732Z"
+                                        stroke="white" stroke-width="1.5125" />
+                                    <path d="M6.59863 13.042V17.0753" stroke="white" stroke-width="1.5125" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M14.666 13.042V17.0753" stroke="white" stroke-width="1.5125" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M10.6318 13.042V17.0753" stroke="white" stroke-width="1.5125" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path
+                                        d="M2.42827 16.5261C2.97849 18.727 3.2536 19.8274 4.07417 20.4681C4.89474 21.1088 6.02903 21.1088 8.29764 21.1088H12.9669C15.2355 21.1088 16.3698 21.1088 17.1904 20.4681C18.011 19.8274 18.286 18.727 18.8363 16.5261C19.7013 13.0657 20.1339 11.3355 19.2256 10.1722C18.3173 9.00879 16.5338 9.00879 12.9669 9.00879H8.29764C4.73075 9.00879 2.94731 9.00879 2.03897 10.1722C1.50577 10.855 1.43461 11.7333 1.64175 13.0421"
+                                        stroke="white" stroke-width="1.5125" stroke-linecap="round" />
+                                </svg>
+                            </button>
+                        </article>
+                    </li>
+                    <li class="products__item">
+                        <article class="product">
+                            <div class="product__img">
+                                <img src="assets/img/products/p1.jpg" alt="">
+                                <div class="people-count">1-2
+                                    <svg width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M7.7998 16.4081C7.7998 12.763 10.7547 9.80811 14.3998 9.80811C18.0449 9.80811 20.9998 12.763 20.9998 16.4081V17.3706C20.9998 18.2059 20.3226 18.8831 19.4873 18.8831H9.3123C8.47697 18.8831 7.7998 18.2059 7.7998 17.3706V16.4081Z"
+                                            fill="#DD4D00" />
+                                        <path
+                                            d="M0.466797 16.4081C0.466797 12.763 3.42172 9.80811 7.0668 9.80811C10.7119 9.80811 13.6668 12.763 13.6668 16.4081V17.3706C13.6668 18.2059 12.9896 18.8831 12.1543 18.8831H1.97929C1.14396 18.8831 0.466797 18.2059 0.466797 17.3706V16.4081Z"
+                                            fill="#DD4D00" fill-opacity="0.59" />
+                                        <circle cx="14.3994" cy="4.85791" r="4.125" fill="#DD4D00" />
+                                        <circle cx="7.06641" cy="4.85791" r="4.125" fill="#DD4D00" fill-opacity="0.59" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <a href="product.html#tab_1" class="product__title">
+                                Ужас Аркхэма. Карточная игра
+                            </a>
+                            <div class="product__price">
+                                1290₽
+                    
+                            </div>
+                            <button class="product__btn">
+                                В корзину
+                                <svg width="22" height="23" viewBox="0 0 22 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M18.1943 9.51312L17.478 6.88606C17.2018 5.87309 17.0637 5.3666 16.7804 4.98516C16.4983 4.60529 16.1149 4.31248 15.6743 4.14023C15.2317 3.96729 14.7068 3.96729 13.6568 3.96729M3.06934 9.51312L3.78566 6.88606C4.06186 5.87309 4.19996 5.3666 4.48323 4.98516C4.76534 4.60529 5.14868 4.31248 5.58938 4.14023C6.0319 3.96729 6.55688 3.96729 7.60684 3.96729"
+                                        stroke="white" stroke-width="1.5125" />
+                                    <path
+                                        d="M7.60742 3.96732C7.60742 3.41044 8.05887 2.95898 8.61576 2.95898H12.6491C13.206 2.95898 13.6574 3.41044 13.6574 3.96732C13.6574 4.5242 13.206 4.97565 12.6491 4.97565H8.61576C8.05887 4.97565 7.60742 4.5242 7.60742 3.96732Z"
+                                        stroke="white" stroke-width="1.5125" />
+                                    <path d="M6.59863 13.042V17.0753" stroke="white" stroke-width="1.5125" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M14.666 13.042V17.0753" stroke="white" stroke-width="1.5125" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M10.6318 13.042V17.0753" stroke="white" stroke-width="1.5125" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path
+                                        d="M2.42827 16.5261C2.97849 18.727 3.2536 19.8274 4.07417 20.4681C4.89474 21.1088 6.02903 21.1088 8.29764 21.1088H12.9669C15.2355 21.1088 16.3698 21.1088 17.1904 20.4681C18.011 19.8274 18.286 18.727 18.8363 16.5261C19.7013 13.0657 20.1339 11.3355 19.2256 10.1722C18.3173 9.00879 16.5338 9.00879 12.9669 9.00879H8.29764C4.73075 9.00879 2.94731 9.00879 2.03897 10.1722C1.50577 10.855 1.43461 11.7333 1.64175 13.0421"
+                                        stroke="white" stroke-width="1.5125" stroke-linecap="round" />
+                                </svg>
+                            </button>
+                        </article>
+                    </li>
+                    <li class="products__item">
+                        <article class="product">
+                            <div class="product__img">
+                                <img src="assets/img/products/p1.jpg" alt="">
+                                <div class="people-count">1-2
+                                    <svg width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M7.7998 16.4081C7.7998 12.763 10.7547 9.80811 14.3998 9.80811C18.0449 9.80811 20.9998 12.763 20.9998 16.4081V17.3706C20.9998 18.2059 20.3226 18.8831 19.4873 18.8831H9.3123C8.47697 18.8831 7.7998 18.2059 7.7998 17.3706V16.4081Z"
+                                            fill="#DD4D00" />
+                                        <path
+                                            d="M0.466797 16.4081C0.466797 12.763 3.42172 9.80811 7.0668 9.80811C10.7119 9.80811 13.6668 12.763 13.6668 16.4081V17.3706C13.6668 18.2059 12.9896 18.8831 12.1543 18.8831H1.97929C1.14396 18.8831 0.466797 18.2059 0.466797 17.3706V16.4081Z"
+                                            fill="#DD4D00" fill-opacity="0.59" />
+                                        <circle cx="14.3994" cy="4.85791" r="4.125" fill="#DD4D00" />
+                                        <circle cx="7.06641" cy="4.85791" r="4.125" fill="#DD4D00" fill-opacity="0.59" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <a href="product.html#tab_1" class="product__title">
+                                Ужас Аркхэма. Карточная игра
+                            </a>
+                            <div class="product__price">
+                                1290₽
+                    
+                            </div>
+                            <button class="product__btn">
+                                В корзину
+                                <svg width="22" height="23" viewBox="0 0 22 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M18.1943 9.51312L17.478 6.88606C17.2018 5.87309 17.0637 5.3666 16.7804 4.98516C16.4983 4.60529 16.1149 4.31248 15.6743 4.14023C15.2317 3.96729 14.7068 3.96729 13.6568 3.96729M3.06934 9.51312L3.78566 6.88606C4.06186 5.87309 4.19996 5.3666 4.48323 4.98516C4.76534 4.60529 5.14868 4.31248 5.58938 4.14023C6.0319 3.96729 6.55688 3.96729 7.60684 3.96729"
+                                        stroke="white" stroke-width="1.5125" />
+                                    <path
+                                        d="M7.60742 3.96732C7.60742 3.41044 8.05887 2.95898 8.61576 2.95898H12.6491C13.206 2.95898 13.6574 3.41044 13.6574 3.96732C13.6574 4.5242 13.206 4.97565 12.6491 4.97565H8.61576C8.05887 4.97565 7.60742 4.5242 7.60742 3.96732Z"
+                                        stroke="white" stroke-width="1.5125" />
+                                    <path d="M6.59863 13.042V17.0753" stroke="white" stroke-width="1.5125" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M14.666 13.042V17.0753" stroke="white" stroke-width="1.5125" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M10.6318 13.042V17.0753" stroke="white" stroke-width="1.5125" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path
+                                        d="M2.42827 16.5261C2.97849 18.727 3.2536 19.8274 4.07417 20.4681C4.89474 21.1088 6.02903 21.1088 8.29764 21.1088H12.9669C15.2355 21.1088 16.3698 21.1088 17.1904 20.4681C18.011 19.8274 18.286 18.727 18.8363 16.5261C19.7013 13.0657 20.1339 11.3355 19.2256 10.1722C18.3173 9.00879 16.5338 9.00879 12.9669 9.00879H8.29764C4.73075 9.00879 2.94731 9.00879 2.03897 10.1722C1.50577 10.855 1.43461 11.7333 1.64175 13.0421"
+                                        stroke="white" stroke-width="1.5125" stroke-linecap="round" />
+                                </svg>
+                            </button>
+                        </article>
+                    </li>
+                    <li class="products__item">
+                        <article class="product">
+                            <div class="product__img">
+                                <img src="assets/img/products/p1.jpg" alt="">
+                                <div class="people-count">1-2
+                                    <svg width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M7.7998 16.4081C7.7998 12.763 10.7547 9.80811 14.3998 9.80811C18.0449 9.80811 20.9998 12.763 20.9998 16.4081V17.3706C20.9998 18.2059 20.3226 18.8831 19.4873 18.8831H9.3123C8.47697 18.8831 7.7998 18.2059 7.7998 17.3706V16.4081Z"
+                                            fill="#DD4D00" />
+                                        <path
+                                            d="M0.466797 16.4081C0.466797 12.763 3.42172 9.80811 7.0668 9.80811C10.7119 9.80811 13.6668 12.763 13.6668 16.4081V17.3706C13.6668 18.2059 12.9896 18.8831 12.1543 18.8831H1.97929C1.14396 18.8831 0.466797 18.2059 0.466797 17.3706V16.4081Z"
+                                            fill="#DD4D00" fill-opacity="0.59" />
+                                        <circle cx="14.3994" cy="4.85791" r="4.125" fill="#DD4D00" />
+                                        <circle cx="7.06641" cy="4.85791" r="4.125" fill="#DD4D00" fill-opacity="0.59" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <a href="product.html#tab_1" class="product__title">
+                                Ужас Аркхэма. Карточная игра
+                            </a>
+                            <div class="product__price">
+                                1290₽
+                    
+                            </div>
+                            <button class="product__btn">
+                                В корзину
+                                <svg width="22" height="23" viewBox="0 0 22 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M18.1943 9.51312L17.478 6.88606C17.2018 5.87309 17.0637 5.3666 16.7804 4.98516C16.4983 4.60529 16.1149 4.31248 15.6743 4.14023C15.2317 3.96729 14.7068 3.96729 13.6568 3.96729M3.06934 9.51312L3.78566 6.88606C4.06186 5.87309 4.19996 5.3666 4.48323 4.98516C4.76534 4.60529 5.14868 4.31248 5.58938 4.14023C6.0319 3.96729 6.55688 3.96729 7.60684 3.96729"
+                                        stroke="white" stroke-width="1.5125" />
+                                    <path
+                                        d="M7.60742 3.96732C7.60742 3.41044 8.05887 2.95898 8.61576 2.95898H12.6491C13.206 2.95898 13.6574 3.41044 13.6574 3.96732C13.6574 4.5242 13.206 4.97565 12.6491 4.97565H8.61576C8.05887 4.97565 7.60742 4.5242 7.60742 3.96732Z"
+                                        stroke="white" stroke-width="1.5125" />
+                                    <path d="M6.59863 13.042V17.0753" stroke="white" stroke-width="1.5125" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M14.666 13.042V17.0753" stroke="white" stroke-width="1.5125" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M10.6318 13.042V17.0753" stroke="white" stroke-width="1.5125" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path
+                                        d="M2.42827 16.5261C2.97849 18.727 3.2536 19.8274 4.07417 20.4681C4.89474 21.1088 6.02903 21.1088 8.29764 21.1088H12.9669C15.2355 21.1088 16.3698 21.1088 17.1904 20.4681C18.011 19.8274 18.286 18.727 18.8363 16.5261C19.7013 13.0657 20.1339 11.3355 19.2256 10.1722C18.3173 9.00879 16.5338 9.00879 12.9669 9.00879H8.29764C4.73075 9.00879 2.94731 9.00879 2.03897 10.1722C1.50577 10.855 1.43461 11.7333 1.64175 13.0421"
+                                        stroke="white" stroke-width="1.5125" stroke-linecap="round" />
+                                </svg>
+                            </button>
+                        </article>
+                    </li>
+                    <li class="products__item">
+                        <article class="product">
+                            <div class="product__img">
+                                <img src="assets/img/products/p1.jpg" alt="">
+                                <div class="people-count">1-2
+                                    <svg width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M7.7998 16.4081C7.7998 12.763 10.7547 9.80811 14.3998 9.80811C18.0449 9.80811 20.9998 12.763 20.9998 16.4081V17.3706C20.9998 18.2059 20.3226 18.8831 19.4873 18.8831H9.3123C8.47697 18.8831 7.7998 18.2059 7.7998 17.3706V16.4081Z"
+                                            fill="#DD4D00" />
+                                        <path
+                                            d="M0.466797 16.4081C0.466797 12.763 3.42172 9.80811 7.0668 9.80811C10.7119 9.80811 13.6668 12.763 13.6668 16.4081V17.3706C13.6668 18.2059 12.9896 18.8831 12.1543 18.8831H1.97929C1.14396 18.8831 0.466797 18.2059 0.466797 17.3706V16.4081Z"
+                                            fill="#DD4D00" fill-opacity="0.59" />
+                                        <circle cx="14.3994" cy="4.85791" r="4.125" fill="#DD4D00" />
+                                        <circle cx="7.06641" cy="4.85791" r="4.125" fill="#DD4D00" fill-opacity="0.59" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <a href="product.html#tab_1" class="product__title">
+                                Ужас Аркхэма. Карточная игра
+                            </a>
+                            <div class="product__price">
+                                1290₽
+                    
+                            </div>
+                            <button class="product__btn">
+                                В корзину
+                                <svg width="22" height="23" viewBox="0 0 22 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M18.1943 9.51312L17.478 6.88606C17.2018 5.87309 17.0637 5.3666 16.7804 4.98516C16.4983 4.60529 16.1149 4.31248 15.6743 4.14023C15.2317 3.96729 14.7068 3.96729 13.6568 3.96729M3.06934 9.51312L3.78566 6.88606C4.06186 5.87309 4.19996 5.3666 4.48323 4.98516C4.76534 4.60529 5.14868 4.31248 5.58938 4.14023C6.0319 3.96729 6.55688 3.96729 7.60684 3.96729"
+                                        stroke="white" stroke-width="1.5125" />
+                                    <path
+                                        d="M7.60742 3.96732C7.60742 3.41044 8.05887 2.95898 8.61576 2.95898H12.6491C13.206 2.95898 13.6574 3.41044 13.6574 3.96732C13.6574 4.5242 13.206 4.97565 12.6491 4.97565H8.61576C8.05887 4.97565 7.60742 4.5242 7.60742 3.96732Z"
+                                        stroke="white" stroke-width="1.5125" />
+                                    <path d="M6.59863 13.042V17.0753" stroke="white" stroke-width="1.5125" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M14.666 13.042V17.0753" stroke="white" stroke-width="1.5125" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M10.6318 13.042V17.0753" stroke="white" stroke-width="1.5125" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path
+                                        d="M2.42827 16.5261C2.97849 18.727 3.2536 19.8274 4.07417 20.4681C4.89474 21.1088 6.02903 21.1088 8.29764 21.1088H12.9669C15.2355 21.1088 16.3698 21.1088 17.1904 20.4681C18.011 19.8274 18.286 18.727 18.8363 16.5261C19.7013 13.0657 20.1339 11.3355 19.2256 10.1722C18.3173 9.00879 16.5338 9.00879 12.9669 9.00879H8.29764C4.73075 9.00879 2.94731 9.00879 2.03897 10.1722C1.50577 10.855 1.43461 11.7333 1.64175 13.0421"
+                                        stroke="white" stroke-width="1.5125" stroke-linecap="round" />
+                                </svg>
+                            </button>
+                        </article>
+                    </li>
+                    <li class="products__item">
+                        <article class="product">
+                            <div class="product__img">
+                                <img src="assets/img/products/p1.jpg" alt="">
+                                <div class="people-count">1-2
+                                    <svg width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M7.7998 16.4081C7.7998 12.763 10.7547 9.80811 14.3998 9.80811C18.0449 9.80811 20.9998 12.763 20.9998 16.4081V17.3706C20.9998 18.2059 20.3226 18.8831 19.4873 18.8831H9.3123C8.47697 18.8831 7.7998 18.2059 7.7998 17.3706V16.4081Z"
+                                            fill="#DD4D00" />
+                                        <path
+                                            d="M0.466797 16.4081C0.466797 12.763 3.42172 9.80811 7.0668 9.80811C10.7119 9.80811 13.6668 12.763 13.6668 16.4081V17.3706C13.6668 18.2059 12.9896 18.8831 12.1543 18.8831H1.97929C1.14396 18.8831 0.466797 18.2059 0.466797 17.3706V16.4081Z"
+                                            fill="#DD4D00" fill-opacity="0.59" />
+                                        <circle cx="14.3994" cy="4.85791" r="4.125" fill="#DD4D00" />
+                                        <circle cx="7.06641" cy="4.85791" r="4.125" fill="#DD4D00" fill-opacity="0.59" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <a href="product.html#tab_1" class="product__title">
+                                Ужас Аркхэма. Карточная игра
+                            </a>
+                            <div class="product__price">
+                                1290₽
+                    
+                            </div>
+                            <button class="product__btn">
+                                В корзину
+                                <svg width="22" height="23" viewBox="0 0 22 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M18.1943 9.51312L17.478 6.88606C17.2018 5.87309 17.0637 5.3666 16.7804 4.98516C16.4983 4.60529 16.1149 4.31248 15.6743 4.14023C15.2317 3.96729 14.7068 3.96729 13.6568 3.96729M3.06934 9.51312L3.78566 6.88606C4.06186 5.87309 4.19996 5.3666 4.48323 4.98516C4.76534 4.60529 5.14868 4.31248 5.58938 4.14023C6.0319 3.96729 6.55688 3.96729 7.60684 3.96729"
+                                        stroke="white" stroke-width="1.5125" />
+                                    <path
+                                        d="M7.60742 3.96732C7.60742 3.41044 8.05887 2.95898 8.61576 2.95898H12.6491C13.206 2.95898 13.6574 3.41044 13.6574 3.96732C13.6574 4.5242 13.206 4.97565 12.6491 4.97565H8.61576C8.05887 4.97565 7.60742 4.5242 7.60742 3.96732Z"
+                                        stroke="white" stroke-width="1.5125" />
+                                    <path d="M6.59863 13.042V17.0753" stroke="white" stroke-width="1.5125" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M14.666 13.042V17.0753" stroke="white" stroke-width="1.5125" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M10.6318 13.042V17.0753" stroke="white" stroke-width="1.5125" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path
+                                        d="M2.42827 16.5261C2.97849 18.727 3.2536 19.8274 4.07417 20.4681C4.89474 21.1088 6.02903 21.1088 8.29764 21.1088H12.9669C15.2355 21.1088 16.3698 21.1088 17.1904 20.4681C18.011 19.8274 18.286 18.727 18.8363 16.5261C19.7013 13.0657 20.1339 11.3355 19.2256 10.1722C18.3173 9.00879 16.5338 9.00879 12.9669 9.00879H8.29764C4.73075 9.00879 2.94731 9.00879 2.03897 10.1722C1.50577 10.855 1.43461 11.7333 1.64175 13.0421"
+                                        stroke="white" stroke-width="1.5125" stroke-linecap="round" />
+                                </svg>
+                            </button>
+                        </article>
+                    </li>
+                    
+                </ul>
+            </section>
+            <div class="center">
+                <a href="catalog.html" class="btn--dop">
+                    В каталог
+                    <svg width="11" height="18" viewBox="0 0 11 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1.52637 0.762951L8.90992 7.53121C9.52433 8.09442 9.52433 9.06306 8.90992 9.62628L1.52637 16.3945"
+                            stroke="black" stroke-width="1.42105" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+        
+    </main>
+    <footer class="footer fc">
+        <div class="container footer__container">
+            <a href="" class="logo">
+                <img src="assets/img/logo.svg" alt="">
+            </a>
+            <nav class="menu">
+                <ul class="menu__list">
+                    <li class="menu__item">
+                        <a class="menu__link" href="index.html#sales">Скидки</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="catalog.html">Каталог</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="index.html#about">О нас</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="index.html#partners">Наши партнеры</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="index.html#info">Информация</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        </footer>
+        <script src="assets/js/main.js"></script>
+        <script src="assets/js/nouislider.min.js"></script>
+        <script src="assets/js/range-slider.js"></script>
+</body>
+</html>
