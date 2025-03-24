@@ -15,7 +15,6 @@ radioButtons.forEach(radioBtn => {
 });
 
 const $body = document.body;
-
 const $burger = document.querySelector('.burger')
 const $headerMenu = document.querySelector('.header__menu')
 if ($burger) {
@@ -94,3 +93,6 @@ function SwitchFun(e) {
     $signin.classList.toggle('visually-hidden');
     $signup.classList.toggle('visually-hidden');
 }
+
+
+

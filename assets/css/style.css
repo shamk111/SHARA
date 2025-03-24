@@ -76,17 +76,18 @@ body {
     font-weight: 400;
     font-size: 24px;
     color: #fff;
+    position: relative;
 }
 
 .container {
-    max-width: 1346px;
+    max-width: 1386px;
+    padding: 0 20px;
     margin: 0 auto;
 
 }
 
 
 .header {
-
     background: linear-gradient(135deg, #af3d00 0%, #c62e00 100%);
     padding: 35px 0;
 }
@@ -119,6 +120,91 @@ body {
     font-size: 24px;
     color: #000;
 }
+.burger {
+    display: none;
+}
+.burger.active span::before {
+    transform: rotate(-45deg);
+    top: 0;
+    visibility: visible;
+}
+.burger.active span::after {
+    transform: rotate(45deg);
+    top: 0;
+    visibility: visible;
+}
+
+.burger.active span {
+    visibility: hidden;
+
+}
+
+.burger span::before {
+    content: '';
+    position: absolute;
+    top: -15px;
+    width: 100%;
+    height: 3px;
+    background: white;
+    transition: all .4s ease;
+}
+.burger span::after {
+    content: '';
+    position: absolute;
+    top: 15px;
+    width: 100%;
+    height: 3px;
+    background: white;
+    transition: all .4s ease;
+}
+
+@media (max-width: 980px) {
+    .header {
+        padding: 25px 0;
+    }
+    .logo img{
+        width: 200px;
+        position: relative;
+        z-index: 2;
+    }
+    .header__menu{
+        transition: all .3s ease;
+        position: absolute;
+        padding-top: 130px;
+        right: 0;
+        left: 0;
+        top: -100%;
+        background: #000;
+        background: linear-gradient(135deg, #af3d00 0%, #c62e00 100%);
+        z-index: 1;
+    }
+    .header__menu.active {
+        inset: 0 ;
+        position: absolute;
+        top: 0;
+    }
+    .menu__list {
+        flex-direction: column;
+        gap: 50px;
+    }
+    .burger {
+        position: relative;
+        z-index: 2;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 42px;
+        height: 30px;
+    }
+    .burger span{
+        position: relative;
+        display: block;
+        width: 100%;
+        background: white;
+        height: 3px;
+        transform: scale(1);
+    }
+}
 
 
 .hero {
@@ -144,6 +230,8 @@ body {
     line-height: 150%;
     stroke:black 1px;
 }
+
+
 .btn-origin {
     border-radius: 18px;
     padding: 27px 85px;
@@ -161,12 +249,35 @@ body {
     color: #fff;
 }
 
+@media (max-width: 430px) {
+    .hero {
+        padding: 78px 0 52px;
+        margin-bottom: 50px;
+    }
+    .hero__title {
+        font-size: 35px;
+    }
+    .btn-origin {
+        border-radius: 18px;
+        padding: 17px 45px;
+        gap: 15px;
+        font-size: 24px;
+
+    }
+    .btn-origin svg{
+        width:15px;
+    }
+}
 
 
 .sales {
     margin-bottom: 120px;
 }
-
+@media (max-width: 430px) {
+    .sales {
+        margin-bottom: 50px;
+    }
+}
 .title {
     font-family: var(--second-family);
     font-weight: 400;
@@ -176,11 +287,33 @@ body {
     line-height: 150%;
     margin-bottom: 54px;
 }
+@media (max-width: 430px) {
+    .title {
+        font-size: 44px;
+    }
+}
+
 .products {
 }
 .products__item {
     grid-column: 3 span;
 }
+
+@media (max-width: 980px) {
+    .products__item {
+        grid-column: 6 span;
+    }
+    .line {
+        max-width: 100%;
+    }
+}
+    
+@media (max-width: 430px) {
+    .products__item {
+        grid-column: 12 span;
+    }
+}
+    
 .psale .product {
     background: #ffe1b1;
 }
@@ -317,6 +450,13 @@ color: #000;
     max-width: 1316px;
     stroke: #000 20px;
 }
+@media (max-width: 980px) {
+    .about-us__decr {
+        max-width: 706px;
+        font-size: 26px;
+
+    }
+}
 
 .center {
     color: #000;
@@ -353,6 +493,14 @@ color: #000;
     justify-content: space-between;
 }
 
+@media (max-width: 980px) {
+    .patners__list {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 50px;
+    }
+}
+
 .partnet {}
 
 .line {
@@ -375,6 +523,15 @@ color: #000;
     
     display: flex;
     justify-content: space-between;
+}
+@media (max-width: 430px) {
+    .faq__inner {
+        flex-wrap: wrap;
+        flex-direction: column;
+    } 
+    .faq__img img{
+        max-width: 100%;
+    }
 }
 
 .faq__info {
@@ -403,6 +560,9 @@ color: #000;
 
 .faq__img {}
 
+.faq__img img{
+    max-width: 100%;
+}
 
 .footer {
     padding: 45px;
@@ -416,6 +576,15 @@ color: #000;
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+@media (max-width: 430px) {
+    .footer__container {
+        flex-direction: column;
+    }
+    .footer .menu {
+        margin-top: 50px;
+    }
 }
 
 .main {}
@@ -965,9 +1134,7 @@ input[type=number] {
     gap: 28px;
 }
 
-.products__item {
-    grid-column: 3 span;
-}
+
 
 .fc {
     margin-top: 72px;
